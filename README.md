@@ -101,6 +101,8 @@ echo "Data has been inserted successfully";
 else{
     echo "Error!";
 }
+
+header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
 ```
 
 - Check the connection -> **go to [http://localhost:8080/index.php](http://localhost:8080/index.php)**, if you see "Data has been inserted successfully", then it worked! 🎉
@@ -133,9 +135,8 @@ else{
 
 ## Step 3: Set up the frontend  
 
-- Before updating you **App.js** file, we'll to install **[Axio](https://axios-http.com/docs/intro)** and the Google Chrome Exstension [Moesif Origin & CORS Changer](https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc#:~:text=Moesif%20Origin%20%26%20CORS%20Changer&text=This%20plugin%20allows%20you%20to,without%20receiving%20Cross%20Origin%20Errors.) and turn it on
+- Before updating you **App.js** file, we'll need to install **[Axios](https://axios-http.com/docs/intro)**
 - Then update your **App.js** file like so: 
-
 
 ```javascript
 import React, { Component } from "react";
