@@ -62,10 +62,10 @@ export default App;
 - Download [XAMPP](https://www.apachefriends.org/index.html).
 - To install it on Mac, rename the downloaded file from ".bz2" file to ".dmg" to convert it and then install it
 - Once installed, launch it and we'll need to do the following:
-  - On the **XAMPP** tab, click on **Start**, the dot should become green and you IP address should appear
+  - On the **XAMPP** tab, click on **Start**, the dot should become green and an IP address should appear
   - On the **Services** tab, all the dots should be green, otherwise click on **Start all**
   - On the **Network** tab, click on **localhost:8080 -> 80 (Over SSH)** and enable it, the dot should become green
-  - On the **Volumes** tab, click on **Mount**, to check if it succeeded, go on the **Finder**, if a new volume appeared with you IP address on "Locations" with a "lampp" folder in it, then it worked! 🎉
+  - On the **Volumes** tab, click on **Mount**, to check if it succeeded, go on the **Finder**, if a new volume appeared with the IP address on "Locations" with a "lampp" folder in it, then it worked! 🎉
 
 ### Create the database
 
@@ -80,7 +80,7 @@ export default App;
 ### Create the index.php file
 
 - Actually, it already exists, you only need to access it and update it
-- Go to **[Finder -> *the volume mounted with your IP address* -> lampp -> htdocs -> index.php]**
+- Go to **[Finder -> *the volume mounted with the IP address* -> lampp -> htdocs -> index.php]**
 - Then update the index.php file with the code below
   - the **username** should be "root" and the **password** should be empty by default. You can verify it by going to **[... -> lampp -> phpmyadmin -> config.inc]** and check the lines ` $cfg['Servers'][$i]['user'] =` and `$cfg['Servers'][$i]['password']=`
   - **db** = your table's name, \*(mine is named "react-php")
